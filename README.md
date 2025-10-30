@@ -3,7 +3,7 @@ Course Teacher: Lubna Yasmin Pinky Ma'am
 
 Assistant Professor
 
-Departmet of Computer Science and Engineering,
+Department of Computer Science and Engineering,
 
 Mawlana Bhashani Science and Technology University.
 
