@@ -68,7 +68,7 @@ void bubble_sort(float arr[], int n)
     cout << endl;
 }
 
-// Function declatarion for Bubble Sort
+// Function declatarion for Insertion Sort
 void insertion_sort(float arr[], int n)
 {
     int j;
@@ -88,7 +88,7 @@ void insertion_sort(float arr[], int n)
     cout << endl;
 }
 
-// Function declatarion for Bubble Sort
+// Function declatarion for Selection Sort
 void selection_sort(float arr[], int n)
 {
     int min;
