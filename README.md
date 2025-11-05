@@ -1,7 +1,7 @@
 # Data-Structure-And-Algorithm-CSE-2103
 Course Teacher: Lubna Yasmin Pinky Ma'am
 
-Assistant Professor
+Associate Professor
 
 Department of Computer Science and Engineering,
 
