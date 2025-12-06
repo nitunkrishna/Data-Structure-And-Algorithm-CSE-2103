@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+void fib(int a, int b, int n);
+
+int main()
+{
+    int n, a=0, b=1;
+    printf("Enter n: ");
+    cin >> n;
+    fib(0, 1, n);
+    cout << endl;
+    return 0;
+}
+
+void fib(int a, int b, int n)
+{
+    if(n==0) return;
+    cout << a << " ";
+    int fibo=a+b;
+    fib(b, fibo, n-1);
+}
