@@ -1,0 +1,73 @@
+#include<bits/stdc++.h>
+using namespace std;
+int node,edge;
+///for adjacent list
+vector<int>graph[30];
+int main()
+{
+    ///input number of node and edge
+    cin>>node>>edge;
+    ///input each edge description
+    for(int i=1; i<=edge; i++)
+    {
+        char a,b;
+        cin>>a>>b;
+        ///character to integer conversion
+        int x,y;
+        x=(int)(a-'r'+1);
+        y=(int)(b-'r'+1);
+        ///there is a node from x to y and y to x
+        graph[x].push_back(y);
+        graph[y].push_back(x);
+    }
+///check to show the output
+    cout<<"======================"<<endl;
+///for printing character
+    for(int i=1; i<=8; i++)
+    {
+        cout << "For node " << char('r' + i - 1) << ": ";
+        ///now printing ith node's jth adjacent
+        ///like, w=s,t,x
+        ///i=6, means w
+        ///w's 0th adjacent s
+        /// w's 1th adjacent t
+        ///w's 2th adjacent x
+        for(int j=0; j<graph[i].size(); j++)
+        {
+            int x = graph[i][j];
+            cout << char('r' + x - 1) << " ";
+        }
+        cout<<endl;
+    }
+    cout<<"======================"<<endl;
+    ///for printing numeric value
+    for(int i=1; i<=8; i++)
+    {
+        cout<<"For node "<<i<<": ";
+        ///now printing ith node's jth adjacent
+        ///like, w=s,t,x
+        ///i=6, means w
+        ///w's 0th adjacent s
+        /// w's 1th adjacent t
+        ///w's 2th adjacent x
+        for(int j=0; j<graph[i].size(); j++)
+        {
+            int x=graph[i][j];
+            cout<<x<<" ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+/*
+8 9
+r v
+r s
+s w
+t w
+t u
+t x
+u y
+w x
+x y
+*/
